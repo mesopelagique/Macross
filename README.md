@@ -1,8 +1,8 @@
-# Macross
+# Macross ✈ 🤖
 
-my macro utility class functions to edit or create macro
+My macro utility class to edit or create macro
 
-## create your macross
+## build your macross
 
 ie. create an object instance which contains a list of macros
 
@@ -17,17 +17,21 @@ with `$input` macro xml text, or a `File` or a collection of macro as objects.
 ## read
 
 ```4d
-$マクロス.macross
+$マクロス.macros // a collection of object
 ```
 
 ## edit
+
+### add a new 
 
 ```4d
 $rankaLee:=New object("name"; "Evaluate and replace/€"; "in_menu"; "true"; "type_ahead"; "false"; "version"; "2")
 $rankaLee.text:="<text><method>Macro_evaluateAndReplace()</method></text>"
 
-$マクロス:=macross(New collection($rankaLee))
+$マクロス.macros.push(rankaLee)
 ```
+
+> text if not parsed for the moment
 
 ## export to xml file
 
@@ -42,9 +46,9 @@ $マクロス.export()
 ### to a specific `File`
 
 ```4d 
-$マクロス.exportToFile($yourFile)
+$マクロス.exportToFile($yourFile) // 4D.File
 ```
 
 ## user interface
 
-This project contains also a form which could display and edit the `Macross` class.
+This project contains also a form which could display and edit the `Macross` class in a simple list box.
