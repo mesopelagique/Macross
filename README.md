@@ -31,7 +31,7 @@ $rankaLee.text:="<text><method>Macro_evaluateAndReplace()</method></text>"
 $マクロス.macros.push(rankaLee)
 ```
 
-> text if not parsed for the moment
+> text attribute is not parsed for the moment
 
 ## export to xml file
 
@@ -41,7 +41,7 @@ $マクロス.macros.push(rankaLee)
 $マクロス.export()
 ```
 
-> if not origin (if input is xml string or object collection, default component path will be used)
+> if no origin file (ex: if the input is an xml string or an objects collection, default component path will be used)
 
 ### to a specific `File`
 
@@ -51,4 +51,4 @@ $マクロス.exportToFile($yourFile) // 4D.File
 
 ## user interface
 
-This project contains also a form which could display and edit the `Macross` class in a simple list box.
+This project contains also a form which could display and edit the `Macross` class, a very simple list box.
