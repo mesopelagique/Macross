@@ -12,7 +12,7 @@ $マクロス:=macross($input) // or macross()
 
 with `$input` macro xml text, or a `File` or a collection of macro as objects.
 
-> If no arg current database macro xml file will be parsed (name Macros.xml, subjet to change or be more flexible)
+> If no arg current database macro xml file will be parsed (file named Macros.xml, subject to change to be more flexible)
 
 ## read
 
