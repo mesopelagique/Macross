@@ -1,0 +1,10 @@
+﻿{
+	"Test": {
+		"methods": [
+			"Macro_evaluateAndReplace",
+			"test_Macross",
+			"test_xml"
+		]
+	},
+	"trash": {}
+}
