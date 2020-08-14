@@ -7,6 +7,8 @@ My macro utility class to edit or create macro
 ie. create an object instance which contains a list of macros
 
 ```4d
+var $マクロス: Object // name it as you want, here MaKuRoSu!
+
 $マクロス:=macross($input) // or macross()
 ```
 
