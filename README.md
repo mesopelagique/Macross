@@ -54,3 +54,8 @@ $マクロス.exportToFile($yourFile) // 4D.File
 ## user interface
 
 This project contains also a form which could display and edit the `Macross` class, a very simple list box.
+
+
+## TODO
+
+- [ ] simple macro to create and add a new macro by just typing method to call
