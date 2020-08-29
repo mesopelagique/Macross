@@ -46,11 +46,11 @@ Function _parse
 		$Dom_tmp:=DOM Find XML element:C864($Dom_root; "/macros/macro"; $Dom_macros)
 		
 		C_LONGINT:C283($i)
+		C_TEXT:C284($Dom_text)
 		For ($i; 1; Size of array:C274($Dom_macros); 1)
 			
 			C_OBJECT:C1216($macro)
 			$macro:=This:C1470._domAttributeToObject($Dom_macros{$i})
-			
 			$Dom_text:=DOM Find XML element:C864($Dom_macros{$i}; "text")
 			ASSERT:C1129(Num:C11($Dom_text)#0; "No text. is it valid?")
 			C_TEXT:C284($tmpText)
@@ -78,6 +78,7 @@ Function _domAttributeToObject
 	$numAttributes:=DOM Count XML attributes:C727($Dom_ref)
 	
 	C_TEXT:C284($name; $value)
+	C_LONGINT:C283($i)
 	For ($i; 1; $numAttributes; 1)
 		DOM GET XML ATTRIBUTE BY INDEX:C729($Dom_ref; $i; $name; $value)
 		$macro[$name]:=$value
@@ -128,6 +129,7 @@ Function exportToFile
 		
 		OB REMOVE:C1226($macro; "text")
 		
+		C_TEXT:C284($key)
 		For each ($key; $macro)
 			DOM SET XML ATTRIBUTE:C866($Dom_macro; $key; $macro[$key])
 		End for each 

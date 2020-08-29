@@ -1,8 +1,9 @@
 //%attributes = {}
-C_TEXT:C284($input_text)
-GET MACRO PARAMETER:C997(Highlighted method text:K5:18; $input_text)
+C_OBJECT:C1216($buffer)
+$buffer:=cs:C1710.MacrossBuffer.new()
+C_TEXT:C284($input_text; $output_text)
+$input_text:=$buffer.getSelectionText()
 
-C_TEXT:C284($output_text)
 C_VARIANT:C1683($var)
 $var:=Formula from string:C1601($input_text).call()
 Case of 
@@ -16,4 +17,4 @@ Case of
 		$output_text:=String:C10($var)
 End case 
 
-SET MACRO PARAMETER:C998(Highlighted method text:K5:18; $output_text)
+$buffer.setSelectionText($output_text)

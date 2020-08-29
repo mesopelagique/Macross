@@ -1,9 +1,14 @@
 ﻿{
 	"Test": {
 		"methods": [
+			"Macro_CheckBlock",
 			"Macro_evaluateAndReplace",
 			"test_Macross",
 			"test_xml"
+		],
+		"classes": [
+			"MacrossBuffer",
+			"MacrossCheckBlock"
 		]
 	},
 	"trash": {}

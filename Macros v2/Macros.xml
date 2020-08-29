@@ -1,1 +1,13 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?><!DOCTYPE macros SYSTEM "http://www.4d.com/dtd/2007/macros.dtd"><macros>  <macro in_menu="true" name="Evaluate and replace/€" type_ahead="false" version="2">    <text>      <method>Macro_evaluateAndReplace()</method>    </text></macro></macros>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE macros SYSTEM "http://www.4d.com/dtd/2007/macros.dtd">
+<macros>
+
+  <macro in_menu="true" name="Evaluate and replace/€" type_ahead="false" version="2">
+    <text>
+      <method>Macro_evaluateAndReplace()</method>
+    </text></macro>
+  <macro in_menu="true" name="CheckBlock" type_ahead="false" version="2">
+    <text>
+      <method>Macro_CheckBlock()</method>
+    </text></macro>
+</macros>

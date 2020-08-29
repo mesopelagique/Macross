@@ -23,6 +23,7 @@ ASSERT:C1129($マクロス.macros.length=2)
 
 ASSERT:C1129($マクロス.macros.equal($choujikuuYousai.macros))
 
+C_OBJECT:C1216($rankaLee)
 $rankaLee:=New object:C1471("name"; "Evaluate and replace/€"; "in_menu"; "true"; "type_ahead"; "false"; "version"; "2")
 $rankaLee.text:="<text><method>Macro_evaluateAndReplace()</method></text>"
 $マクロス:=macross(New collection:C1472($rankaLee))
